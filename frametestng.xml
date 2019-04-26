@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+  <parameter name="browser" value="chrome"></parameter>
+  <listeners>
+  <listener class-name="listeners.AdpterTest"></listener>
+  </listeners>
+  <test thread-count="10" name="Test">
+    <classes>
+      <class name="scripts.Flipcart"/>
+      <class name="scripts.RemoteScreenshot"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
